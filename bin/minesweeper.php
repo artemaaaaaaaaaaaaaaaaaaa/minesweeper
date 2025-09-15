@@ -1,6 +1,11 @@
 #!/usr/bin/env php
 <?php
-require __DIR__ . '/../vendor/autoload.php';
+
+$autoload = __DIR__ . '/../vendor/autoload.php';
+if (!file_exists($autoload)) {
+    $autoload = dirname(__DIR__, 2) . '/autoload.php'; 
+}
+require $autoload;
 
 use function Artyo\Minesweeper\Controller\startGame;
 
