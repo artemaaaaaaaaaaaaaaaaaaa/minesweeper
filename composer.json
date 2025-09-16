@@ -1,5 +1,6 @@
 {
     "name": "artyo/minesweeper",
+    "version": "1.0.1",
     "license": "MIT",
     "require": {
         "wp-cli/php-cli-tools": "^0.12.6"
